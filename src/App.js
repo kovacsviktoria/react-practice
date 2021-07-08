@@ -7,7 +7,7 @@ function App() {
     <div className="form">
       <Button text="Send" />
     </div>
-
+    <div>Hello new branch</div>
     <div className="form2">
       <Button text="Send2" />
     </div>
