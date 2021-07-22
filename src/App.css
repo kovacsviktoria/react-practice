@@ -47,6 +47,7 @@ select {
 
 body {
     height: 100vh;
+    font-family: 'Raleway', sans-serif;
     background-image: url(/src/levendula-tenger.jpg);
     background-position:center;
     background-repeat:no-repeat;
@@ -54,5 +55,14 @@ body {
 }
 
 .cardContainer {
-    transform: translate(-20%, -50%);
+    transform: translate(-15%, -50%);
+}
+
+h1 {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+}
+
+#button{ 
+    margin: 20px;
+    background-color:rgb(115, 79, 115);
 }

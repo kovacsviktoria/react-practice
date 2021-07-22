@@ -3,7 +3,11 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import { Box } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
+import { borders } from '@material-ui/system';
 import { positions } from '@material-ui/system';
+import { Typography } from '@material-ui/core';
+import { shadows } from '@material-ui/system';
+
 
 
 function Form () {
@@ -29,11 +33,22 @@ function Form () {
   //          <button type="submit" onClick= {() => {setFormSubmit(true)}}>Send</button> 33.sor másik megoldás
 
   return (
-    <Box className="cardContainer" maxWidth="40%" minWidth="30%" height="50vh" position="absolute" top="50%" left="10%" bgcolor="white">
+    <Box className="cardContainer" width="500px" height="300px" position="absolute" top="50%" left="15%" bgcolor="rgba(255,255,255,0.6)" borderLeft={10} borderColor="white" borderRadius="0px 50px 50px 0px" boxShadow={3} letterSpacing={1}>
 
-      <h1>Contact form</h1>
+      <Box component="h1" height="50px" margin="10px" align="center" color="white" fontSize="28pt">
+        Contact form
+      </Box>
 
-      <form onSubmit={(e) => {e.preventDefault(); }}>
+      <Box component="form" onSubmit={(e) => {e.preventDefault(); }} display="flex" flexDirection="column" alignItems="center">
+
+        <TextField id="standard-basic" label="First name" display="block"/>
+        <TextField id="standard-basic" label="Last name" display="block"/>
+        <TextField id="standard-basic" label="E-mail" display="block"/>
+
+        <Button id="button" variant="contained" display="block" color="primary" type="submit" onSubmit={(e) => {e.preventDefault(); setFormSubmit(true) }}>Send</Button>
+      </Box>
+
+      {/* <form onSubmit={(e) => {e.preventDefault(); }}>
         <Box display="block" >
           <TextField id="standard-basic" label="First name"/>
         </Box>
@@ -45,7 +60,7 @@ function Form () {
         </Box>
 
         <Button variant="contained" display="block" color="primary" type="submit" onSubmit={(e) => {e.preventDefault(); setFormSubmit(true) }}>Send</Button>
-      </form>
+      </form> */}
 
     </Box>
   );
