@@ -35,7 +35,7 @@ function Form () {
   return (
     <Box className="cardContainer" width="500px" height="300px" position="absolute" top="50%" left="15%" bgcolor="rgba(255,255,255,0.6)" borderLeft={10} borderColor="white" borderRadius="0px 50px 50px 0px" boxShadow={3} letterSpacing={1}>
 
-      <Box component="h1" height="50px" margin="10px" align="center" color="white" fontSize="28pt">
+      <Box component="h1" height="50px" margin="20px 0px 10px 0px" align="center" color="white" fontSize="28pt">
         Contact form
       </Box>
 
